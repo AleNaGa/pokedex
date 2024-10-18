@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="Ejercicio de Pokedex de Cliente">
+    <meta name="keywords" content="HTML, CSS, JavaScript">
+    <meta name="author" content="Alejandro">
+    <meta name="copyright" content="Pokedex">
+    <meta name="robots" content="index, follow">
+    <meta name="language" content="Spanish">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokedex</title>
+    <link href='https://fonts.googleapis.com/css?family=Roboto Mono' rel='stylesheet'>
+    <link rel="stylesheet" href="css/index.css">
+    <script src="js/app.js" type="text/javascript" defer></script>
+</head>
+<body>
+    <form action="" id="form" onsubmit="searchPokemon(event)">
+        <input type="text" name="pokemon" placeholder="Buscar pokemon" autocomplete="off">
+    </form>
+    <div data-poke-card class="poke-card">
+        <div data-poke-name></div>
+        <div data-poke-img-container class="img-container">
+            <img data-poke-img src="./pokedex.png" alt="pokemon" class="poke-img"/>
+        </div>
+        <div data-poke-id></div>
+        <div data-poke-types class="poke-types"></div>
+        <div data-poke-stats class="poke-stats"></div>
+    </div>
+</body>
+</html>
